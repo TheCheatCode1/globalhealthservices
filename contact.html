@@ -132,52 +132,100 @@
                             tabindex="0"></iframe>
                     </div>
                
-        <div class="col-md-6">
-            <div class="wow fadeInUp" data-wow-delay="0.5s">
-                <p class="mb-4"></a></p>
-                <form>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
-                            </div>
+            
+                            
                         </div>
-
-
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                <label for="email">Your Email</label>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="subject" placeholder="Your Phone">
-                                <label for="subject">Phone Number</label>
-                            </div>
-                        </div>
-
-                         <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Your Phone">
-                                    <label for="subject">Company</label>
-                            </div>
-                        </div>  
-                        
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Company" id="message" ></textarea>
-                                <label for="message">What roles do you want Outsourced</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                        </div>
-                        </div>
-                    </div>
-                </form>
+                        <section class="contact-us section">
+                            <div class="container">
+                              <div class="row">
+                                <!-- Left Side: Form -->
+                                <div class="col-lg-6">
+                                  <form class="form referral-form" method="post" action="mail/mail.php" style="border: 2px solid #ccc; padding: 20px; border-radius: 8px; background-color: #fff;">
+                                    <div class="row">
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <input type="text" name="physician_name" placeholder="Referring Physician's Name" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <input type="text" name="physician_phone" placeholder="Referring Physician's Phone Number" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <input type="email" name="physician_email" placeholder="Referring Physician's Email" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <input type="text" name="office_name" placeholder="Physician's Office Name">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-12">
+                                        <div class="form-group">
+                                          <input type="text" name="patient_name" placeholder="Patient's Name" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <input type="text" name="patient_phone" placeholder="Patient's Phone Number" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <input type="email" name="patient_email" placeholder="Patient's Email">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <input type="number" name="patient_age" placeholder="Patient's Age" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                        <div class="form-group">
+                                          <select name="patient_sex" required>
+                                            <option value="" disabled selected>Select Sex</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-12">
+                                        <div class="form-group">
+                                          <input type="text" name="reason_coming_in" placeholder="Reason for Coming In" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-12">
+                                        <div class="form-group">
+                                          <input type="text" name="primary_concern" placeholder="Primary Reasons for Concern" required>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-12">
+                                        <div class="form-group">
+                                          <textarea name="previous_treatments" placeholder="Previous Treatments/Tests"></textarea>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-12">
+                                        <div class="form-group">
+                                          <textarea name="condition_reason" placeholder="Patient's Condition/Reason for Referral"></textarea>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-6">
+                                            <label for="resume">Upload Resume:</label>
+                                            <input type="file" id="resume" name="resume"
+                                                accept=".pdf,.doc,.docx" required><br><br>
+    
+                                        </div>
+                                      <div class="col-12">
+                                        <div class="form-group login-btn">
+                                          <button class="btn" type="submit">SUBMIT REFERRAL</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                  </form>
             </div>
         </div>
     </div>
